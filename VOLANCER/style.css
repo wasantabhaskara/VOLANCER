@@ -1,0 +1,35 @@
+.navbar .navbar-brand{
+    font-weight: 1000;
+}
+.jumbotron {
+    background-image: url("home.jpg");
+    background-size: cover;
+    background-position-y: 40%;
+    height: 750px;
+    margin-top: -120px;
+    text-align: center;
+    color: white;
+}
+.jumbotron .display-4{
+    margin-top: 300px;
+    font-weight: 700;
+    font-size: 50px;
+}
+.jumbotron a{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: ;
+}
+.jumbotron .text1{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.jumbotron .lead{
+    margin-top: 50px;
+}
+footer{
+    margin-top: -50px;
+}
+section{
+    height: 50vh;
+}
