@@ -2,7 +2,7 @@
     font-weight: 1000;
 }
 .jumbotron {
-    background-image: url("home.jpg");
+    background-image: url("img/home.jpg");
     background-size: cover;
     background-position-y: 40%;
     height: 750px;
