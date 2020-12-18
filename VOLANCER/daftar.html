@@ -44,8 +44,37 @@
     </style>
   </head>
   <body>
+  <?php 
+        if(isset($_GET['pesan'])){
+            if($_GET['pesan'] == "gagal"){
+                echo "<script>alert('Username sudah digunakan. Ganti Username!');</script>";
+            }else if($_GET['pesan'] == "konfirm_gagal"){
+                echo "<script>alert('Konfirmasi password gagal');</script>";
+            }}
+        ?>
+    <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-warning">
+      <div class="container">
+      <a class="navbar-brand mb-0 h1" href="index.php">VOLANCER</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="user/carirelawan_user.php">Cari Relawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jadirelawan.php">Jadi Relawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.php">Hubungi Kami</a>
+          </li>
+        </ul>
+      </div> 
+    </div>
+    </nav>
     <div class="signup-form">
-        <form name="daftar" action="#" method="POST" onSubmit="validasi(this)">
+        <form name="daftar" action="cek_daftar.php" method="POST" onSubmit="validasi(this)">
             <h2 class="text-center">Daftar</h2>     
             <div class="form-group">
                 <input type="text" class="form-control" name="username" placeholder="Nama Pengguna">
@@ -63,9 +92,9 @@
                 <input type="password" class="form-control" id="pwconfirm" name="pwconfirm" placeholder="Konfirmasi Password">
             </div>
             <div class="form-group">
-                <button type="submit" name="daftar_process" class="btn btn-secondary btn-block">Daftar</button>
+                <button type="submit" name="register" value="register"  name="daftar_process" class="btn btn-secondary btn-block">Daftar</button>
             </div>       
-            <p class="text-center"><a href="masuk.html">Sudah punya akun? Masuk disini</a></p>
+            <p class="text-center"><a href="masuk.php">Sudah punya akun? Masuk disini</a></p>
         </form>
         
     </div>
@@ -112,15 +141,10 @@
             form.password.focus();
             return (false);
 
-        } else if (form.pwconfirm.value==""){
+        } else (form.pwconfirm.value==""){
             alert("Konfirmasi Password Tidak Boleh kosong!");
             form.pwconfirm.focus();
             return (false);
-
-        } else {
-            alert('Anda berhasil menyimpan data');
-            return (true);
-        }
         }
     
    </script>
