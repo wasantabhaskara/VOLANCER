@@ -44,8 +44,40 @@
     </style>
   </head>
   <body>
+  <?php 
+        if(isset($_GET['pesan'])){
+            if($_GET['pesan'] == "gagal"){
+                echo "<script>alert('Login gagal! username dan password salah!');</script>";  
+            }else if($_GET['pesan'] == "belum_login"){
+                echo "<script>alert('Anda harus login untuk mengakses halaman ini');</script>";
+            }else if($_GET['pesan'] == "berhasil"){
+                echo "<script>alert('Anda telah berhasil mendaftar');</script>";
+            }
+        }
+        ?>
+    <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-warning">
+      <div class="container">
+      <a class="navbar-brand mb-0 h1" href="index.php">VOLANCER</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="user/carirelawan_user.php">Cari Relawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jadirelawan.php">Jadi Relawan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.php">Hubungi Kami</a>
+          </li>
+        </ul>
+      </div> 
+    </div>
+    </nav>
     <div class="login-form">
-        <form name="masuk" action="#" method="POST" onSubmit="validasi_masuk(this)">
+        <form name="login" action="cek_login.php" method="post">
             <h2 class="text-center">Masuk</h2>       
             <div class="form-group">
                 <input type="text" class="form-control" name="username" placeholder="Nama Pengguna">
@@ -56,34 +88,10 @@
             <div class="form-group">
                 <button type="submit" class="btn btn-secondary btn-block">Masuk</button>
             </div>       
-            <p class="text-center"><a href="daftar.html">Tidak punya akun? Daftar disini</a></p>
+            <p class="text-center"><a href="daftar.php">Tidak punya akun? Daftar disini</a></p>
         </form>
         
     </div>
-
-    <script>
-        //validasi inputan form ketika kosong atau belum memenuhi suatu peraturan tertentu
-        function validasi_masuk(form){
-        //membuat pattern inputan email
-  
-        //validasi dimulai
-        if (form.username.value=="") {
-        alert("Username Harus Diisi!");
-        form.username.focus();
-        return (false);
-
-        } else if (form.password.value==""){
-            alert("Password Tidak Boleh kosong!");
-            form.password.focus();
-            return (false);
-
-        } else {
-            alert('Anda berhasil masuk');
-            return (true);
-        }
-        }
-    </script>
-   
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="js/jquery-3.5.1.min.js" ></script>
