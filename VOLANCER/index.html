@@ -12,26 +12,31 @@
     <title>Volancer</title>
   </head>
   <body>
-   
+  <?php
+   if(isset($_GET['pesan'])){
+    if($_GET['pesan'] == "logout"){
+    echo "<script>alert('Anda telah berhasil logout');</script>";
+    }}
+    ?>
     <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-transparent text-dark">
       <div class="container">
-      <a class="navbar-brand mb-0 h1" href="index.html">VOLANCER</a>
+      <a class="navbar-brand mb-0 h1" href="index.php">VOLANCER</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="masuk.html">Masuk</a>
+            <a class="nav-link" href="masuk.php">Masuk</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="carirelawan.html">Cari Relawan</a>
+            <a class="nav-link" href="user/carirelawan_user.php">Cari Relawan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Jadi Relawan</a>
+            <a class="nav-link" href="jadirelawan.php">Jadi Relawan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Kontak.html">Hubungi Kami</a>
+            <a class="nav-link" href="kontak.php">Hubungi Kami</a>
           </li>
         </ul>
       </div> 
@@ -43,7 +48,7 @@
       <h1 class="display-4">Selamat Datang di VOLANCER</h1>
       <hr class="my-4">
       <p class="text1">mulai langkahmu dari sini</p>
-      <a class="btn btn-warning btn-lg" href="#" role="button">Cari Relawan</a>
+      <a class="btn btn-warning btn-lg" href="user/carirelawan_user.php" role="button">Cari Relawan</a>
       <a class="btn btn-warning btn-lg" href="#" role="button">Jadi Relawan</a>
       <p class="lead"><i> Tidak semua dari kita bisa melakukan hal-hal besar <br> Tapi kita bisa melakukan hal-hal kecil dengan cinta kasih yang besar<br>-Mother Theresa-</i></p>
     </div>
