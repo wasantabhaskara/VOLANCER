@@ -63,14 +63,15 @@
     </nav>
     <div class="jumbotron">
       <div class="container text-center">
-      <img src="http://rencanamu.id/assets/file_uploaded/editor/1500436949-english-cl.jpg" class="rounded-circle">
-            <h1>Volunteer</h1>
+      <img src="img/logo.jpg" class="rounded-circle">
+            <h1>VOLANCER</h1>
      </div>
     </div>
     <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    <img src="http://pajak.vokasi.ui.ac.id/wp-content/uploads/2017/12/DSC_0111_1024x680-1024x680.jpg" class="rounded">
                     <h2 class="text-center">Relawan Administrasi</h2>
                     <hr>
                 </div>
@@ -87,6 +88,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    <img src="http://rencanamu.id/assets/file_uploaded/editor/1500436949-english-cl.jpg" class="rounded">
                     <h2 class="text-center">Relawan Edukasi</h2>
                     <hr>
                 </div>
@@ -102,6 +104,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    <img src="https://manadones.com/wp-content/uploads/2019/07/mangggggggg.jpg" class="rounded">
                     <h2 class="text-center">Relawan Konservasi</h2>
                     <hr>
                 </div>
@@ -117,6 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    <img src="https://rencanamu.id/assets/file_uploaded/blog/1500437103-1.jpg" class="rounded">
                     <h2 class="text-center">Relawan Humanis</h2>
                     <hr>
                 </div>
@@ -132,7 +136,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                <img src="http://rencanamu.id/assets/file_uploaded/editor/1500436975-volunteers.jpg" class="rounded-circle">
+                <img src="http://rencanamu.id/assets/file_uploaded/editor/1500436975-volunteers.jpg" class="rounded">
                     <h2 class="text-center">Relawan Acara</h2>
                     <hr>
                 </div>
